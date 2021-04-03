@@ -1,0 +1,19 @@
+html {
+    height: 100%;
+    text-align: center;
+}
+
+.contact {
+    margin: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    color: red;
+}
