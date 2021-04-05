@@ -24,13 +24,14 @@ body {
 header {
     background-color: #fff;
     height: 100%;
-    width: 20rem;
+    width: 20%;
     border-right: .2rem solid #eee;
     top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* position: fixed; */
 }
 
 header .logo {
