@@ -33,10 +33,11 @@
 .my-info1, .my-info2{
     margin: 1rem 0;
     width: 50%;
+    color: #bbb;
 }
 
 .my-info1 span, .my-info2 span {
-    color: #bbb;
+    color: black;
 }
 
 .my-info1 p, .my-info2 p {
@@ -72,6 +73,7 @@
 .about h2 {
     font-size: 3rem;
     border-bottom: .2rem solid red;
+    margin: -.7rem 0;
 }
 
 .my-skills .skill-container {
@@ -90,8 +92,8 @@
     width: 30%;
 }
 
-.button-style {
-    margin: 2.5rem 0;
+/* .button-style {
+    margin: 1rem 0 1rem;
     color: #555555;
     background-color: red;
     font-size: 1.6rem;
@@ -109,4 +111,4 @@
     display: flex;
     justify-content: center;
     color: #fff;
-}
+} */
