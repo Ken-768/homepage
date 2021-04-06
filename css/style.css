@@ -81,6 +81,73 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 300;
+}
+
+.hamburger__line {
+    position: absolute;
+    left: 11px;
+    width: 18px;
+    height: 1px;
+    background-color: #111;
+    transition: all .6s;
+    display: none;
+}
+
+.hamburger__line--1 {
+    top: 14px;
+}
+.hamburger__line--2 {
+    top: 20px;
+}
+.hamburger__line--3 {
+    top: 26px;
+}
+
+.black-bg {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    cursor: pointer;
+}
+
+.nav-open .global-nav {
+    right: 0;
+}
+.nav-open .black-bg {
+    opacity: .8;
+    visibility: visible;
+}
+.nav-open .hamburger__line--1 {
+    transform: rotate(45deg);
+    top: 20px;
+}
+.nav-open .hamburger__line--2 {
+    width: 0;
+    left: 50%;
+}
+.nav-open .hamburger__line--3 {
+    transform: rotate(-45deg);
+    top: 20px;
 }
 
 main .profile {
@@ -122,4 +189,38 @@ main .profile {
     color: #fff;
     font-size: 2rem;
     line-height: 3.5rem;
+}
+
+@media screen and (max-width:1240px) {
+    header {
+        display: none;
+    }
+
+    .hamburger__line {
+        display: flex;
+    }
+
+    .mobile-nav__content {
+        background-color: white;
+        height: 100%;
+        width: 50%;
+    }
+
+    .mobile-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 2.5rem;
+        height: 65%;
+        justify-content: space-evenly;
+        list-style: none;
+        margin: 0 1rem;
+        height: 100%;
+    }
+
+    .mobile-nav a {
+        text-decoration: none;
+        color: #333;
+    }
 }
