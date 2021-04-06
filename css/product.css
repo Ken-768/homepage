@@ -6,6 +6,10 @@
     justify-content: left;
 }
 
+.profile {
+    width: 100%;
+}
+
 .product-title h1 {
     width: 100%;
     font-size: 3rem;
