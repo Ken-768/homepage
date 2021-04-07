@@ -92,6 +92,25 @@
     width: 30%;
 }
 
+@media screen and (max-width:900px) {
+    .my-info__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .my-info1, .my-info2 {
+        width: 100%;
+    }
+
+    .about-me h1 {
+        font-size: 2rem;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+}
+
 /* .button-style {
     margin: 1rem 0 1rem;
     color: #555555;
