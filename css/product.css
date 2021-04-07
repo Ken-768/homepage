@@ -63,6 +63,7 @@
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
+    margin: 2rem 0;
 }
 
 .product-all {
@@ -72,4 +73,34 @@
 .product-all img {
     border: 3px solid #ccc;
     width: 100%;
+}
+
+@media screen and (max-width:415px) {
+    .tab-group {
+        max-width: 300px;
+    }
+
+    .tab p {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .tab-group {
+        max-width: 300px;
+    }
+
+    .tab p {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .tab-group {
+        max-width: 250px;
+    }
+
+    .tab p {
+        font-size: .5rem;
+    }
 }
