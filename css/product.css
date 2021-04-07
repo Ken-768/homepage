@@ -86,6 +86,10 @@
 }
 
 @media screen and (max-width:375px) {
+    .product-title h1 {
+        font-size: 2rem;
+    }
+
     .tab-group {
         max-width: 300px;
     }
