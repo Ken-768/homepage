@@ -96,6 +96,7 @@
 
     .tab p {
         font-size: .7rem;
+        white-space: nowrap;
     }
 }
 
