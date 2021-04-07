@@ -4,6 +4,7 @@
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 html {
@@ -192,6 +193,10 @@ main .profile {
 }
 
 @media screen and (max-width:1240px) {
+    * {
+        overflow-y: auto;
+    }
+
     header {
         display: none;
     }
