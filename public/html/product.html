@@ -61,7 +61,41 @@
             </div>
         </div>
     </section>
-    <script type="text/javascript" src="../javaScript/product.js"></script>
     <script type="text/javascript" src="../javaScript/hamburger.js"></script>
+    <script>
+        //なぜかデプロイしたサイトではJSが動かないのでベタ書き。回答が来次第修正。
+        function toggleNav() {
+            let body = document.body;
+            let hamburger = document.getElementById('js-hamburger');
+            let blackBg = document.getElementById('js-black-bg');
+
+            hamburger.addEventListener('click', function() {
+                body.classList.toggle('nav-open');
+            });
+            blackBg.addEventListener('click', function() {
+                body.classList.remove('nav-open');
+            });
+        }
+        toggleNav();
+
+        function tabUI() {
+                document.addEventListener('DOMContentLoaded', function(){
+                const tabs = document.getElementsByClassName('tab');
+                for(let tab = 0; tab < tabs.length; tab++) {
+                    tabs[tab].addEventListener('click', tabSwitch);
+                }
+
+                function tabSwitch() {
+                    document.getElementsByClassName('is-active')[0].classList.remove('is-active');
+                    this.classList.add('is-active');
+                    document.getElementsByClassName('is-show')[0].classList.remove('is-show');
+                    const arrayTabs = Array.prototype.slice.call(tabs);
+                    const index = arrayTabs.indexOf(this);
+                    document.getElementsByClassName('content')[index].classList.add('is-show');
+                }
+            });
+        }
+        tabUI();
+    </script>
 </body>
 </html>
