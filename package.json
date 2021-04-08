@@ -1,0 +1,21 @@
+{
+  "name": "kentaro-homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run-script build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ken-768/homepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ken-768/homepage/issues"
+  },
+  "homepage": "https://github.com/Ken-768/homepage#readme"
+}
