@@ -23,7 +23,7 @@
     color: red;
 }
 
-.my-info__container {
+.my-info {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -50,7 +50,7 @@
     margin: 2rem 0;
 }
 
-.services .service {
+.services .services__service {
     color: #bbb;
     font-size: 1.5rem;
     font-weight: bold;
@@ -59,7 +59,7 @@
     margin: 1rem 0;
 }
 
-.services .service-detail {
+.services .services__service-detail {
     max-width: 700px;
     font-size: 1rem;
 }
@@ -93,7 +93,7 @@
 }
 
 @media screen and (max-width:900px) {
-    .my-info__container {
+    .my-info {
         display: flex;
         flex-direction: column;
     }
@@ -110,24 +110,3 @@
         font-size: 2rem;
     }
 }
-
-/* .button-style {
-    margin: 1rem 0 1rem;
-    color: #555555;
-    background-color: red;
-    font-size: 1.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3em;
-    width: 15rem;
-    height: 4rem;
-}
-
-.button-style a {
-    text-decoration: none;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    color: #fff;
-} */

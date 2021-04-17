@@ -41,7 +41,7 @@ header .logo {
     width: 7vw;
 }
 
-header .nav {
+header .logo__nav {
     font-size: 1.7rem;
     height: 65%;
     display: flex;
@@ -51,22 +51,22 @@ header .nav {
     margin: 0 1rem;
 }
 
-header .nav .nav-page {
+header .logo__nav .logo__nav-page {
     text-decoration: none;
     color: red;
 }
 
-header .nav a {
+header .logo__nav a {
     text-decoration: none;
     color: #333;
 }
 
-header .nav li {
+header .logo__nav li {
     display: flex;
     border-bottom: solid #eee;
 }
 
-header .nav li i {
+header .logo__nav li i {
     margin: 0 1rem;
 }
 
@@ -158,7 +158,7 @@ main .profile {
     align-items: center;
 }
 
-.profile .profile-icon {
+.profile .profile__profile-icon {
     border-radius: 50%;
     border: .5rem solid #fff;
     height: 12rem;
@@ -170,16 +170,16 @@ main .profile {
     margin-top: 2rem;
 }
 
-.profile .subtitle {
+.profile .profile__subtitle {
     font-size: 1.5rem;
     color: #999;
 }
 
-.profile .sns-link {
+.profile .profile__sns-link {
     margin-top: 2rem;
 }
 
-.sns-link a{
+.profile__sns-link a{
     height: 3.5rem;
     width: 3.5rem;
     border-radius: 50%;
@@ -190,6 +190,10 @@ main .profile {
     color: #fff;
     font-size: 2rem;
     line-height: 3.5rem;
+}
+
+.fab {
+    padding-top: .7rem;
 }
 
 @media screen and (max-width:1240px) {
@@ -205,13 +209,13 @@ main .profile {
         display: flex;
     }
 
-    .mobile-nav__content {
+    .mobile-nav {
         background-color: white;
         height: 100%;
         width: 65%;
     }
 
-    .mobile-nav {
+    .mobile-nav__content {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -224,7 +228,7 @@ main .profile {
         height: 100%;
     }
 
-    .mobile-nav a {
+    .mobile-nav__content a {
         text-decoration: none;
         color: #333;
     }
